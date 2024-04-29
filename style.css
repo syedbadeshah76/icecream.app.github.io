@@ -113,8 +113,8 @@ img {
 
 /* ================= REUSABLE CSS CLASSES================ */
 .container {
-    max-width: 1120px;
-    margin-inline: 1.5rem;
+    /* max-width: 1120px; */
+    /* margin-inline: 1.5rem; */
 }
 
 .grid {
@@ -141,10 +141,7 @@ img {
 /* ===========================header & nav====================== */
 .header {
     /* position: fixed; */
-    width: 100%;
-    top: 0;
-    left: 0;
-    /* background-color: blue; */
+    width: 100%;    /* background-color: blue; */
     z-index: var(--z-fixed);
     height: 100px;
     /* line-height: 100px; */
@@ -152,16 +149,17 @@ img {
 }
 
 .nav {
-    position: relative;
+    /* position: relative; */
     height: var(--header-height);
 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 0 40px; */
+    padding: 0 40px;
 }
 
 .nav__logo {
+
     color: var(--first-color);
     font-size: var(--h2-font-size);
     font-family: var(--second-font);
@@ -189,41 +187,19 @@ img {
 
 .nav__menu ul {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    left: 380px;
+    /* margin-right:50px ; */
+    
 }
+.nav__menu li {
+    margin: 0 1rem;
+}
+
 
 /* ============================search bar ============================= */
 
 
-button {
-    padding: 10px 20px;
-    background-color: var(--first-color-alt);
-    color: #fff;
-    border: none;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-
-}
-
-button:hover {
-    background-color: var(--first-color);
-}
 
 
-.nav__link {
-    color: var(--title-color);
-    font-weight: var(--font-semi-bold);
-    transition: color .4s;
-    margin: 16px;
-}
-
-.nav__link:hover {
-
-    color: var(--first-color);
-}
 
 /* ======================main========================== */
 .main1 {
@@ -795,7 +771,7 @@ footer i:hover {
 
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1000px) {
     .nav__logo {
         font-size: 18px;
         /* background-color: white; */
@@ -1026,9 +1002,9 @@ footer i:hover {
     }
 }
 
-@media screen and  (max-width: 600px) {
+@media screen and  (max-width: 700px) {
   .content h1{
-    font-size: 12px;
+    font-size: 18px;
     left: 10px;
     top: 30px;
 
@@ -1041,10 +1017,10 @@ footer i:hover {
     width: 100%;
   }
   .img1 img{
-    width: 100px;
+    width: 150px;
     height: 120px;
     /* background-color: #006600; */
-    left: 220px;
+    left: 420px;
 
   }
   .btn {
